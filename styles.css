@@ -1,0 +1,76 @@
+
+.hide {
+    display: none;
+}
+
+html {
+    align-items: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v448-kul-22-heartbackground_2.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=0bb619dd7c3bb9a4dc33405c171e2ecd');
+}
+
+#mainpage {
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    margin-left: 500px;
+
+}
+.title1 {
+    color: purple;
+    font-size: 40px;
+}
+
+#submit-btn{
+    height: 50px;
+    width: 200px;
+    background-color: lightpink;
+    border-radius: 8px;
+    border: 5px solid purple;
+}
+
+#secondPage {
+margin-top: 200px;
+margin-left: 500px;
+font-weight: bold;
+font-size: 20px;
+color: purple;
+text-shadow: 2px 2px  white;
+
+}
+
+#heart-img {
+    
+    margin-left: 520px;
+    animation: heartBeat 500ms infinite;
+}
+@keyframes heartBeat {
+    from {
+        height: 80px;
+        width: 100px;
+    }
+    to {
+        height: 130px;
+        width: 150px;
+    }
+}
+
+#broken-heart {
+    height: 100px;
+    width: 100px;
+    margin-left: 520px;
+    animation: brokenHeart 1000ms infinite;
+
+}
+@keyframes brokenHeart {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+}
